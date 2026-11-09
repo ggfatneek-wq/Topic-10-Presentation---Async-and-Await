@@ -12,6 +12,8 @@ Future<void> main() async {
     print('Warning: temperature is too high.');
   }
 
+  // CHANGE 3: Change the next line to:
+  // await checkSensor();
   checkSensor();
 }
 
@@ -21,6 +23,11 @@ Future<int> fetchTemperature() async {
   return 35;
 }
 
+// CHANGE 1: Change the next line to:
+// Future<void> checkSensor() async {
 void checkSensor() {
+  // CHANGE 2: Type this delay BELOW this comment:
+  // await Future.delayed(Duration(seconds: 1));
+
   print('Sensor check complete.');
 }
